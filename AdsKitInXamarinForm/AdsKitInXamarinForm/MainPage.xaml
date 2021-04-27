@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ads="clr-namespace:AdsKitInXamarinForm.Controls;"
+             x:Class="AdsKitInXamarinForm.MainPage">
+
+    <StackLayout
+        Orientation="Vertical"
+        VerticalOptions="FillAndExpand"
+        HorizontalOptions="FillAndExpand"
+        Background="#FBF1CD"
+        >
+
+        <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="StartAndExpand">
+            <Label Text="Time: "
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"
+                   TextColor="#2C1843"
+                   FontSize="32"
+                   />
+            <Label x:Name="lblTime"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"
+                   TextColor="#2C1843"
+                   Text="00:00"
+                   FontSize="32"
+                   />
+            <Label Text="Score: "
+                   HorizontalOptions="End"
+                   VerticalOptions="Center"
+                   TextColor="#2C1843"
+                   FontSize="32"
+                   />
+            <Label x:Name="lblScore"
+                   HorizontalOptions="End"
+                   VerticalOptions="Center"
+                   TextColor="#2C1843"
+                   Text="0"
+                   FontSize="32"
+                   />
+        </StackLayout>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <BoxView Color="White" />
+            <Image x:Name="imageOne"
+                   Source="alien.png"
+                   HorizontalOptions="Center"
+                   HeightRequest="100"
+                   WidthRequest="120"
+                   >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="OnImageNameTapped"
+                        NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+            <BoxView Grid.Column="1"
+                 Color="White" />
+            <Image Grid.Column="1"
+                   x:Name="imageTwo"
+                   Source="alien.png"
+                   HorizontalOptions="Center"
+                   HeightRequest="100"
+                   WidthRequest="120"
+                   >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="OnImageNameTapped"
+                        NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+            <BoxView Grid.Column="2"
+                 Color="White" />
+            <Image Grid.Column="2"
+                   x:Name="imageThree"
+                   Source="alien.png"
+                   HorizontalOptions="Center"
+                   HeightRequest="100"
+                   WidthRequest="120"
+                   >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="OnImageNameTapped"
+                        NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+            <BoxView Grid.Row="1"
+                 Color="White" />
+            <Image Grid.Row="1"
+                   x:Name="imageFour"
+                   Source="alien.png"
+                   HorizontalOptions="Center"
+                   HeightRequest="100"
+                   WidthRequest="120"
+                   >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="OnImageNameTapped"
+                        NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+            <BoxView Grid.Row="1"
+                 Grid.Column="1"
+                 Color="White" />
+            <Image Grid.Row="1"
+                   Grid.Column="1"
+                   x:Name="imageFive"
+                   Source="alien.png"
+                   HorizontalOptions="Center"
+                   HeightRequest="100"
+                   WidthRequest="120"
+                   >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="OnImageNameTapped"
+                        NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+            <BoxView Grid.Row="1"
+                 Grid.Column="2"
+                 Color="White" />
+            <Image Grid.Row="1"
+                   Grid.Column="2"
+                   x:Name="imageSix"
+                   Source="alien.png"
+                   HorizontalOptions="Center"
+                   HeightRequest="100"
+                   WidthRequest="120"
+                   >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="OnImageNameTapped"
+                        NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+            <BoxView Grid.Row="2"
+                 Color="White" />
+            <Image Grid.Row="2"
+                   x:Name="imageSeven"
+                   Source="alien.png"
+                   HorizontalOptions="Center"
+                   HeightRequest="100"
+                   WidthRequest="120"
+                   >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="OnImageNameTapped"
+                        NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+            <BoxView Grid.Row="2"
+                     Grid.Column="1"
+                 Color="White" />
+            <Image Grid.Row="2"
+                   Grid.Column="1"
+                   x:Name="imageEight"
+                   Source="alien.png"
+                   HorizontalOptions="Center"
+                   HeightRequest="100"
+                   WidthRequest="120"
+                   >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="OnImageNameTapped"
+                        NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+            <BoxView Grid.Row="2"
+                     Grid.Column="2"
+                 Color="White" />
+            <Image Grid.Row="2"
+                   Grid.Column="2"
+                   x:Name="imageNine"
+                   Source="alien.png"
+                   HorizontalOptions="Center"
+                   HeightRequest="100"
+                   WidthRequest="120"
+                   >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="OnImageNameTapped"
+                        NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+            <BoxView Color="White"
+                     Grid.Row="3"/>
+            <Image x:Name="imageTen"
+                   Grid.Row="3"
+                   Source="alien.png"
+                   HorizontalOptions="Center"
+                   HeightRequest="100"
+                   WidthRequest="120"
+                   >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="OnImageNameTapped"
+                        NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+            <BoxView Grid.Row="3" 
+                Grid.Column="1"
+                 Color="White" />
+            <Image Grid.Row="3"
+                   Grid.Column="1"
+                   x:Name="imageEleven"
+                   Source="alien.png"
+                   HorizontalOptions="Center"
+                   HeightRequest="100"
+                   WidthRequest="120"
+                   >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="OnImageNameTapped"
+                        NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+            <BoxView Grid.Row="3" 
+                 Grid.Column="2"
+                 Color="White" />
+            <Image Grid.Row="3"
+                   Grid.Column="2"
+                   x:Name="imageTwelve"
+                   Source="alien.png"
+                   HorizontalOptions="Center"
+                   HeightRequest="100"
+                   WidthRequest="120"
+                   >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="OnImageNameTapped"
+                        NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+            <BoxView Color="White"
+                     Grid.Row="4"/>
+            <Image x:Name="imageThirteen"
+                   Grid.Row="4"
+                   Source="alien.png"
+                   HorizontalOptions="Center"
+                   HeightRequest="100"
+                   WidthRequest="120"
+                   >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="OnImageNameTapped"
+                        NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+            <BoxView Grid.Row="4" 
+                Grid.Column="1"
+                 Color="White" />
+            <Image Grid.Row="4"
+                   Grid.Column="1"
+                   x:Name="imageFourTeen"
+                   Source="alien.png"
+                   HorizontalOptions="Center"
+                   HeightRequest="100"
+                   WidthRequest="120"
+                   >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="OnImageNameTapped"
+                        NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+            <BoxView Grid.Row="4" 
+                 Grid.Column="2"
+                 Color="White" />
+            <Image Grid.Row="4"
+                   Grid.Column="2"
+                   x:Name="imageFifTeen"
+                   Source="alien.png"
+                   HorizontalOptions="Center"
+                   HeightRequest="100"
+                   WidthRequest="120"
+                   >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="OnImageNameTapped"
+                        NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+        </Grid>
+
+        <ads:CustomViewControl x:Name="banner" VerticalOptions="FillAndExpand"/>
+        <Button Text="Exit"
+                    BackgroundColor="#2C1843"
+                    BorderRadius="10"
+                    BorderWidth="2"
+                    BorderColor="#BDBDBD"
+                    TextColor="White"
+                    FontSize="Large"
+                    Clicked="OnExitButtonClicked"
+                    />
+    </StackLayout>
+</ContentPage>

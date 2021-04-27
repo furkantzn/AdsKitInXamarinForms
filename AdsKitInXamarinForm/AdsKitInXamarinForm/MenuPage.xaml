@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AdsKitInXamarinForm.MenuPage">
+    <ContentPage.Content>
+        <StackLayout
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand"
+            Orientation="Vertical"
+            Background="#FBF1CD"
+            >
+            <Image Source="alien.png"
+                   HorizontalOptions="Center"
+                   HeightRequest="350"
+                   WidthRequest="200"
+                   />
+            <Label x:Name="lblHeader"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   Text="Catch the Alien !"
+                   TextColor="White"
+                   BackgroundColor="#2C1843"
+                   FontSize="Header"
+                   />
+            <Button Text="Play"
+                    BackgroundColor="#2C1843"
+                    BorderRadius="10"
+                    BorderWidth="2"
+                    BorderColor="#BDBDBD"
+                    TextColor="White"
+                    FontSize="Large"
+                    Clicked="OnPlayButtonClicked"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    />
+            <Button Text="Exit"
+                    BackgroundColor="#2C1843"
+                    BorderRadius="10"
+                    BorderWidth="2"
+                    BorderColor="#BDBDBD"
+                    TextColor="White"
+                    FontSize="Large"
+                    Clicked="OnExitButtonClicked"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
